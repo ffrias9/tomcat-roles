@@ -1,6 +1,6 @@
 ---
 - name: Tomcat deployment playbook
-  hosts: tomcat-nodes 
+  hosts: 192.168.10.60
   become: yes        
   become_method: sudo
   remote_user: vagrant
