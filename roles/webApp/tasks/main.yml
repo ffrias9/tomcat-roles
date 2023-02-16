@@ -8,7 +8,7 @@
 
 - name: Download magnolia WAR file on the Tomcat Server
   get_url:
-    url: https://sourceforge.net/projects/magnolia/files/latest/download
-    dest: "{{ dest }}/magnolia.war"
+    url: https://sourceforge.net/projects/magnolia/files/magnolia/Magnolia%20CE%206.2.28/magnolia-community-webapp-6.2.28.war/download
+    dest: "{{ dest }}"
     owner: tomcat
     group: tomcat
