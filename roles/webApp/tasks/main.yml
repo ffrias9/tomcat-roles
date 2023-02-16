@@ -6,9 +6,9 @@
     owner: tomcat
     group: tomcat
 
-- name: Copy magnolia WAR file to Tomcat Server
-  copy:
-    src: magnolia.war
-    dest: "{{ dest }}"
+- name: Download magnolia WAR file on the Tomcat Server
+  get_url:
+    url: https://sourceforge.net/projects/magnolia/files/latest/download
+    dest: "{{ dest }}/magnolia.war"
     owner: tomcat
     group: tomcat
