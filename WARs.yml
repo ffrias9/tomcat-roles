@@ -1,9 +1,8 @@
 ---
-- name: Tomcat deployment playbook
+- name: Deploy web apps
   hosts: all
-  become: yes        
+  become: yes
   become_method: sudo
   remote_user: vagrant
   roles:
-    - tomcat
-
+    - webApp

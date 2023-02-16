@@ -1,0 +1,14 @@
+---
+- name: Copy sample WAR file to Tomcat Server
+  copy:
+    src: sample.war
+    dest: "{{ dest }}"
+    owner: tomcat
+    group: tomcat
+
+- name: Copy magnolia WAR file to Tomcat Server
+  copy:
+    src: magnolia.war
+    dest: "{{ dest }}"
+    owner: tomcat
+    group: tomcat

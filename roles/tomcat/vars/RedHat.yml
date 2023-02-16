@@ -1,1 +1,7 @@
 JAVA_HOME: /usr/lib/jvm/jre
+
+tomcat_ver: 9.0.52
+ui_manager_user: vagrant
+ui_manager_pass: vagrant
+ui_admin_username: vagrant
+ui_admin_pass: vagrant
